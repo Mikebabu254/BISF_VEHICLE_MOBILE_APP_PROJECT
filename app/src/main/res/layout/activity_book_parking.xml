@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgBlue"
+    tools:context=".bookParking">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="141dp"
+        android:layout_marginTop="22dp"
+        android:text="VPMA"
+        android:textSize="50dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="141dp"
+        android:layout_marginTop="22dp"
+        android:textColor="@color/vpmaBlue"
+        android:text="VPMA"
+        android:textSize="50dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/txtVw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="150dp"
+        android:text="Parking Venue:"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <Spinner
+        android:id="@+id/bookingParkingVenue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/txtVw"
+        android:layout_marginLeft="52dp"
+        android:layout_marginBottom="-1dp"
+        android:layout_toRightOf="@+id/txtVw" />
+
+    <TextView
+        android:id="@+id/txtVw1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="200dp"
+        android:text="Parking Slot:"
+        android:textStyle="bold"
+        android:textSize="20dp" />
+
+    <Spinner
+        android:id="@+id/bookingParkingSlot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/txtVw1"
+        android:layout_marginLeft="76dp"
+        android:layout_marginBottom="-4dp"
+        android:layout_toRightOf="@+id/txtVw1" />
+
+    <TextView
+        android:id="@+id/txtVw2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="250dp"
+        android:text="Payment Method:"
+        android:textStyle="bold"
+        android:textSize="20dp" />
+
+    <Spinner
+        android:id="@+id/bookingParkingPaymentMethod"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/txtVw2"
+        android:layout_marginLeft="25dp"
+        android:layout_marginBottom="2dp"
+        android:layout_toRightOf="@+id/txtVw2" />
+
+    <TextView
+        android:id="@+id/bookingDatePicker"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="57dp"
+        android:layout_marginTop="300dp"
+        android:text="2023/01/01"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/bookingBtnDatePicker"
+        android:layout_width="wrap_content"
+        android:text="select date"
+        android:backgroundTint="#5170FD"
+        android:layout_height="36dp"
+        android:layout_marginStart="250dp"
+        android:layout_marginTop="300dp"/>
+
+    <TextView
+        android:id="@+id/bookingTimePicker"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="57dp"
+        android:layout_marginTop="350dp"
+        android:text="00:00"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/bookingBtnTimePicker"
+        android:layout_width="wrap_content"
+        android:text="select time"
+        android:backgroundTint="#5170FD"
+        android:layout_height="36dp"
+        android:layout_marginStart="250dp"
+        android:layout_marginTop="350dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="400dp"
+        android:text="Duration(Hrs)"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/bookingDurationPicker"
+        android:layout_width="108dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="180dp"
+        android:layout_marginTop="400dp"
+        android:inputType="number" />
+
+
+    <TextView
+        android:id="@+id/bookingCash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="190dp"
+        android:layout_marginTop="500dp"
+        android:text="ksh 00.00"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="53dp"
+        android:layout_marginTop="450dp"
+        android:text="Time Out"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="53dp"
+        android:layout_marginTop="500dp"
+        android:text="Amount"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/bookingTimeOut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="190dp"
+        android:layout_marginTop="450dp"
+        android:text="00:00"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="53dp"
+        android:layout_marginTop="550dp"
+        android:text="car Reg No"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/carRegNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="200dp"
+        android:layout_marginTop="550dp"
+        android:hint="car reg no"
+        android:inputType="text" />
+
+    <Button
+        android:id="@+id/bookingBtnConfirm"
+        android:layout_width="100dp"
+        android:layout_height="36dp"
+        android:backgroundTint="#5170FD"
+        android:layout_alignParentStart="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="154dp"
+        android:layout_marginTop="600dp"
+        android:text="confirm" />
+
+    <Button
+        android:id="@+id/bookingBtnConfirmParking"
+        android:layout_width="100dp"
+        android:layout_height="36dp"
+        android:layout_alignParentStart="true"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="#5170FD"
+        android:layout_marginStart="157dp"
+        android:layout_marginTop="650dp"
+        android:text="done" />
+
+
+    <ProgressBar
+        android:id="@+id/bookProgress"
+        android:layout_width="294dp"
+        android:layout_height="244dp"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="69dp"
+        android:layout_marginTop="500dp"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/textViewUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="91dp"
+        android:text="email" />
+
+    <TextView
+        android:id="@+id/recieptNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="126dp"
+        android:text="reciept number" />
+</RelativeLayout>
+

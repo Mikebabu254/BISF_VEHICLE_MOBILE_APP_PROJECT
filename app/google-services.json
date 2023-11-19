@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1059134693643",
+    "project_id": "vpma-8b74d",
+    "storage_bucket": "vpma-8b74d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1059134693643:android:cdf31dda5593c4edc5420e",
+        "android_client_info": {
+          "package_name": "com.example.bisfproject"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDcYJsOUGMGPKE8yXP079Ny6ExjgW2Bo8w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
