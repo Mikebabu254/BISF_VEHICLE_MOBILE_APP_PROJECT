@@ -77,7 +77,7 @@ public class bookParking extends AppCompatActivity {
 
 
         parkingVenue = findViewById(R.id.bookingParkingVenue);
-        String[] optionVenue = {"PICK A VENUE","KICC parking", "Skate park", "Parliament road"};
+        String[] optionVenue = {"PICK A VENUE","KICC parking", "Skate park", "Parliament road","ARCHIVE"};
         ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, optionVenue);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         parkingVenue.setAdapter(adapter);
